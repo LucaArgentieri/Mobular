@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 header{
-    height: 1000px;
+    height: 710px; /* Da sistemare */
 }
 .sfondo {
     background-image: url(img/llol.jpg); /*img da cambiare*/
@@ -19,10 +19,17 @@ header{
     width: 100%;
     height: 100%;
 }
-
+.testoheader{
+    color: white;
+    margin-left: 10px;
+    padding: 30px 0px;
+    padding:10%;
+    font-size: 60px;
+}
 a {
     text-decoration: none;
     color: white;
+    font-size: 26px;
 }
 .logo {
     display: flex;
@@ -35,9 +42,8 @@ nav li {
     justify-content: space-between;
     padding: 30px 20px;
     display: inline-block;
-    list-style: none;
     font-size: 26px;
-    text-transform: capitalize;
+
 }
 .donate {
     padding: 30px 20px;

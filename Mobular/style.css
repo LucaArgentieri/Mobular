@@ -7,5 +7,44 @@
     box-sizing: border-box;
 }
 body {
-    background-color: blue;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+header{
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    padding: 30px -0px;
+    font-size: 26px;
+    text-decoration: none;
+}
+.logo:hover{
+    color: white;
+    text-decoration: none;
+}
+nav li {
+    justify-content: space-between;
+    padding: 30px 20px;
+    display: inline-block;
+    list-style: none;
+    font-size: 26px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.donate {
+    padding: 30px 20px;
+    font-size: 26px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    text-decoration: none;
+    color:white;
 }

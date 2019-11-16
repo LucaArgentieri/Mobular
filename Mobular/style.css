@@ -10,7 +10,7 @@ body, html{
     margin: 0;
     background-color: black;
 }
-
+/* background zone */
 .sfondo {
     background-image: url(img/llol.jpg); /*img da cambiare*/
     background-position: center;
@@ -18,13 +18,13 @@ body, html{
     background-size: cover;
     height: 100%; 
 }
+/* header zone */
 .testoheader{
     color: white;
     margin-left: 10px;
     padding: 30px 0px;
     padding:10%;
     font-size: 60px;
-    caps
 }
 a {
     text-decoration: none;
@@ -54,6 +54,11 @@ nav {
     justify-content: space-around;
     padding: 30px 20px;
 }
+.btn-to-main{
+    display: flex;
+    justify-content: center;
+}
+/* main zone */
 main {
     background-color: white;
     display: flex;
@@ -70,6 +75,7 @@ main .colonna h2 {
 }
 main .colonna p{
     margin-top: 10px;
+    margin-right: 100px;
     text-align: justify;
     hyphens: auto;
 }

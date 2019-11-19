@@ -9,6 +9,7 @@ body, html{
     height: 100%;
     margin: 0;
     background-color: black;
+    font-family: Coolvetica, Helvetica, sans-serif;
 }
 /* background zone */
 .sfondo {
@@ -79,14 +80,22 @@ main .colonna p{
     text-align: justify;
     hyphens: auto;
 }
-.banner {
+.banner{
     height: 200px;
-    width: 100%;
+    
     color: black;
     background-color: turquoise;
+    
 }
+
 .bannertext {
-   align-items: center;
-   margin: auto;
+   display: flex;
+   justify-content: center;
    font-size: 60px;
+   align-items: center;
+   text-align: center;
+   line-height: 200px;
+   
+   
+   
 }

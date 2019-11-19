@@ -8,7 +8,7 @@
 body, html{
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: blue;
     font-family: Coolvetica, Helvetica, sans-serif;
 }
 /* background zone */
@@ -20,12 +20,16 @@ body, html{
     height: 100%; 
 }
 /* header zone */
+.active {
+    color: blue;
+}
 .testoheader{
     color: white;
     margin-left: 10px;
     padding: 30px 0px;
     padding:10%;
     font-size: 60px;
+    color: #fff;
 }
 a {
     text-decoration: none;
@@ -95,7 +99,20 @@ main .colonna p{
    align-items: center;
    text-align: center;
    line-height: 200px;
-   
-   
-   
+}
+footer {
+    background-color:#315354;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+footer div.social {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.social a {
+    margin: 20px 20px;
+    width: 30px;
 }

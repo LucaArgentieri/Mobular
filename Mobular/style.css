@@ -28,8 +28,9 @@ body, html{
     margin-left: 10px;
     padding: 30px 0px;
     padding:10%;
-    font-size: 60px;
+    font-size: 90px;
     color: #fff;
+    line-height: 1.2;
 }
 a {
     text-decoration: none;

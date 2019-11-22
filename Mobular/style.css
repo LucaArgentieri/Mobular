@@ -6,6 +6,12 @@
     box-sizing: border-box;
 
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 body, html{
     height: 100%;
     margin: 0;
@@ -139,4 +145,36 @@ footer div.social {
 .social a {
     margin: 20px 20px;
     width: 30px;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    flex: wrap;
+    
+    background-color: white;
+    color: white;
+    
+}
+
+.box{
+
+    
+    width: 225px;
+    height: 225px;
+    background-color: #d1d1d1;
+    margin: 45px;
+    
+    
+}
+
+.boxtesto{
+
+    width: 225px;
+    height: 30px;
+    background-color: #d1d1d1;
+    text-align: center;
 }

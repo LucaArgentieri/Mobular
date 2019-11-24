@@ -1,0 +1,60 @@
+                    /* development */
+
+                    *{
+                        border: 2px solid red
+                    }
+                    html, body {
+                        border: none;
+                    }
+
+
+
+/* to copy */
+
+header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contenuto { 
+    display: flex;
+    justify-content: center;
+}
+.contenuto a {
+    padding: 0 2em;
+}
+input[type=checkbox], ul{
+    display: none;
+}
+input[type=checkbox]:checked ~ ul {
+    display: block
+}
+.dropdown {
+    display:none
+}
+.dropdown ul{
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+
+
+
+/* media query */
+
+@media (max-width: 900px){
+    .menu {
+        display: none
+    }
+    .dropdown{
+        display: block;
+        text-align: right;
+    }
+    header{
+        justify-content: space-between;
+    }
+}

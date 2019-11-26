@@ -106,7 +106,7 @@ nav.contenuto .active, .dropdown ul li a.active {
 header h1{
     color: white;
     padding:10% 13%;
-    font-size: 4em;
+    font-size: 4.5em;
     color: #fff;
     line-height: 1.2;
     display: flex;
@@ -187,6 +187,18 @@ footer div.social {
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+@media (max-width: 750px){
+
+    header h1{
+        font-size: 4em;
+    }
+}
+@media (max-width: 550px){
+
+    header h1{
+        font-size: 3em;
     }
 }
 

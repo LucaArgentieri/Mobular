@@ -23,7 +23,7 @@ header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: url(img/cover.png); 
+    background-image: url(img/cover.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

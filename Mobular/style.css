@@ -27,7 +27,6 @@ header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-transform: uppercase;
     padding: 20px 0;
     align-items: center;
     opacity: 1;
@@ -48,7 +47,8 @@ a:hover{
     padding: 0 20px;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 30px;    
+    text-transform: uppercase;
 }
 input[type=checkbox], ul{
     display: none;
@@ -78,6 +78,7 @@ input[type=checkbox]:checked ~ ul {
     color: white;
     text-decoration: none;
     font-size: 30px;
+    text-transform: uppercase;
 }
 .contenuto a {
     display: flex;
@@ -106,7 +107,7 @@ nav.contenuto .active, .dropdown ul li a.active {
 header h1{
     color: white;
     padding:10% 13%;
-    font-size: 70px;
+    font-size: 4em;
     color: #fff;
     line-height: 1.2;
     display: flex;
@@ -189,10 +190,5 @@ footer div.social {
         padding-right: 20px;
     }
 }
-@media screen and (max-width: 600px) {
-    body {
-      font-size: 30px;
-    }
-  }
 
 

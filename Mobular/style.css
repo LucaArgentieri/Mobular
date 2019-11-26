@@ -15,7 +15,6 @@ body, html{
     background-color: blue;
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
-
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Heebo', sans-serif;
@@ -171,6 +170,7 @@ main img {
     background-image: url(img/newsletter.jpg);
     background-size: cover;
     background-position: center;
+
 }
 .bannertext {
    display: flex;

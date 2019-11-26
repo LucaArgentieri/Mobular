@@ -165,12 +165,18 @@ main .colonna p{
 }
 .bannernews {
     height: 200px;
-    color: black;
     background-color:rgb(248, 114, 3);  
     background-image: url(img/newsletter.jpg);
     background-size: cover;
     background-position: center;
 
+}
+.bannerdonate {
+    height: 200px;
+    color: #0a1128;
+    background-color:rgb(248, 114, 3);
+    background-size: cover;
+    background-position: center;
 }
 .bannertext {
    display: flex;
@@ -193,12 +199,6 @@ form.newsletter{
     justify-content: center;
     margin-top: 5px;
 }
-form.container_donate{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 50px;
-}
 form.newsletter input {
     padding: 15px;
     background-color: transparent;
@@ -206,11 +206,6 @@ form.newsletter input {
     color: white;
     box-shadow: 1px 1px 1px black;
     text-shadow: 1px 1px 1px black;
-}
-.box_donate label{
-    color:white;
-    border: 1px solid white;
-    padding: 7px
 }
 form.newsletter .campomail {
     margin-right: 30px;
@@ -257,13 +252,13 @@ footer div.social {
 
     header h1{
         font-size: 4em;
-        padding:20% 0;
     }
 }
 @media (max-width: 550px){
 
     header h1{
         font-size: 3em;
+        padding:20% 5%;
     }
 }
 

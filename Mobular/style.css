@@ -35,6 +35,10 @@ header{
     text-transform: uppercase;
     padding: 20px 0;
     align-items: center;
+    opacity: 1;
+}
+a:hover{
+    opacity: 0.8;
 }
 .header_home{
     height: 100vh;
@@ -204,5 +208,10 @@ footer div.social {
         padding-right: 20px;
     }
 }
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 30px;
+    }
+  }
 
 

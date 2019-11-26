@@ -133,6 +133,7 @@ main {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 main .colonna {
     width: 50%;
@@ -190,8 +191,10 @@ main img {
 aside h2 {
     text-align: center;
     padding-top: 40px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    padding-bottom: 20px;
+    color: black;
+    position: relative;
+    z-index: 0;
 }
 form.newsletter{
     display: flex;
@@ -202,17 +205,17 @@ form.newsletter{
 form.newsletter input {
     padding: 15px;
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    box-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px black;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
 }
 form.newsletter .campomail {
     margin-right: 30px;
     width: 50%;
 }
 ::placeholder {
-    color: white;
+    color: black;
 }
 footer {
     background-color:#315354;

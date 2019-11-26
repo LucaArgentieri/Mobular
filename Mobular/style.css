@@ -13,15 +13,18 @@ body, html{
     height: 100%;
     margin: 0;
     background-color: blue;
-    font-family: Coolvetica, Helvetica, sans-serif;
+    
     scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Heebo', sans-serif;
 }
 /* header zone */
 header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: url(img/cover.png); 
+    background-image: url(img/cover.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,10 +33,9 @@ header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-transform: uppercase;
     padding: 20px 0;
     align-items: center;
-    opacity: 1;
+    font-family: 'Heebo', sans-serif;
 }
 a:hover{
     opacity: 0.8;
@@ -51,7 +53,8 @@ a:hover{
     padding: 0 20px;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;    
+    text-transform: uppercase;
 }
 input[type=checkbox], ul{
     display: none;
@@ -81,6 +84,7 @@ input[type=checkbox]:checked ~ ul {
     color: white;
     text-decoration: none;
     font-size: 30px;
+    text-transform: uppercase;
 }
 .contenuto a {
     display: flex;
@@ -109,7 +113,7 @@ nav.contenuto .active, .dropdown ul li a.active {
 header h1{
     color: white;
     padding:10% 13%;
-    font-size: 70px;
+    font-size: 4.5em;
     color: #fff;
     line-height: 1.2;
     display: flex;
@@ -122,6 +126,9 @@ header h1{
     position: absolute;
     bottom: 5%;
     width: 100%;
+}
+header .dropdown .icon_home{
+    margin-top: -30px;
 }
 /* main zone */
 main {
@@ -214,7 +221,7 @@ footer div.social {
 }
 /* media query */
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
 
     /* Header */
     
@@ -231,10 +238,18 @@ footer div.social {
         padding-right: 20px;
     }
 }
-@media screen and (max-width: 600px) {
-    body {
-      font-size: 30px;
+@media (max-width: 750px){
+
+    header h1{
+        font-size: 4em;
+        padding:20% 0;
     }
-  }
+}
+@media (max-width: 550px){
+
+    header h1{
+        font-size: 3em;
+    }
+}
 
 

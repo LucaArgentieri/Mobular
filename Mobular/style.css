@@ -13,11 +13,6 @@ body, html{
     font-family: Coolvetica, Helvetica, sans-serif;
     scroll-behavior: smooth
 }
-
-
-
-
-
 /* header zone */
 header{
     display: flex;
@@ -117,12 +112,6 @@ header h1{
     bottom: 5%;
     width: 100%;
 }
-
-
-
-
-
-
 /* main zone */
 main {
     background-color: white;
@@ -148,10 +137,8 @@ main .colonna p{
 .banner {
     height: 200px;
     color: black;
-    background-color: turquoise;
-    
+    background-color: turquoise;  
 }
-
 .bannertext {
    display: flex;
    justify-content: center;
@@ -166,7 +153,6 @@ footer {
     text-align: center;
     height: 150px;
 }
-
 footer div.social {
     width: 100%; 
     display: flex;
@@ -176,11 +162,6 @@ footer div.social {
     margin: 20px 20px;
     width: 30px;
 }
-
-
-
-
-
 /* media query */
 
 @media (max-width: 1100px){
@@ -200,5 +181,7 @@ footer div.social {
         padding-right: 20px;
     }
 }
-
-
+ /* Pagina Mobular */
+main .mobularbg {
+    background-image: url(mobularface.jpg);
+}

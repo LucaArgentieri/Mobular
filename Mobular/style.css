@@ -188,12 +188,23 @@ form.newsletter{
     justify-content: center;
     margin-top: 50px;
 }
+form.container_donate{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
 form.newsletter input {
     padding: 15px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 5px;
     color: white;
+}
+.box_donate label{
+    color:white;
+    border: 1px solid white;
+    padding: 7px
 }
 form.newsletter .campomail {
     margin-right: 30px;

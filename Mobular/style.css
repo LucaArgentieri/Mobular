@@ -149,7 +149,7 @@ main .colonna p{
     text-align: justify;
     hyphens: auto;
 }
-main img {
+.imgmainindex  {
     width: 50%;
     margin-left: 50%;
     height: auto;
@@ -268,3 +268,17 @@ footer div.social {
 }
 
 
+/* ----------- PAGINA MOBULAR -----------
+Main di mobular  */
+.mobularmain {
+    background-color: #0a1128;
+}
+article h2 {
+    color: white;
+
+}
+.mobularface {
+    width: 50%;
+    display: flex;
+    
+}

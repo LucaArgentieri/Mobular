@@ -302,6 +302,7 @@ Main di mobular  */
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
 }
 .columnmobular {
     display: flex;
@@ -317,7 +318,8 @@ Main di mobular  */
 .image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
  
 .overlay {
@@ -346,6 +348,8 @@ Main di mobular  */
 }
 .text a {
     color:#0a1128;
+    width: 100%;
+    height: 100%;
 }
 .overlaypopup {
     position: fixed;
@@ -357,14 +361,17 @@ Main di mobular  */
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    z-index: 1 ;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 .overlaypopup:target {
     visibility: visible;
     opacity: 1;
 }
 .popup {
-    margin: 70px auto;
+    margin: 200px auto;
     padding: 20px;
     background:#0a1128;
     border-radius: 5px;

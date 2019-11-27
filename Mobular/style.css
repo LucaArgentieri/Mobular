@@ -273,11 +273,18 @@ footer div.social {
         font-size: 4em;
     }
 }
-@media (max-width: 550px){
+@media (max-width: 650px){
 
     header h1{
         font-size: 3em;
         padding:20% 5%;
+    }
+}
+@media (max-width: 550px){
+
+    header h1{
+        font-size: 2.5em;
+        padding:20% 3%;
     }
 }
 

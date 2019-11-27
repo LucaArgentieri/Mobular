@@ -127,6 +127,22 @@ header h1{
     position: absolute;
     bottom: 5%;
     width: 100%;
+
+}
+@keyframes gbounce { 
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+  
+.btn-to-main {
+    animation: gbounce 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+.btn-to-main:hover {
+    animation:step-end;
 }
 /* main zone */
 main {

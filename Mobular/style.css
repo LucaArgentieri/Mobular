@@ -16,6 +16,9 @@ body, html{
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
 }
+a {
+    text-decoration:none;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Heebo', sans-serif;
 }
@@ -324,20 +327,22 @@ Main di mobular  */
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:rgb(248, 114, 3) ;
+    background-color:rgb(248, 114, 3);
 }
 .container:hover .overlay {
     opacity: 0.5;
 }
   
 .text {
-    color: white;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.text a {
+    color:#0a1128;
 }
 .overlaypopup {
     position: fixed;
@@ -349,7 +354,7 @@ Main di mobular  */
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    z-index: 1  ;
+    z-index: 1 ;
 }
 .overlaypopup:target {
     visibility: visible;
@@ -358,16 +363,16 @@ Main di mobular  */
 .popup {
     margin: 70px auto;
     padding: 20px;
-    background: #fff;
+    background:#0a1128;
     border-radius: 5px;
-    width: 30%;
+    width: 60%;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 1s linear;
 }
   
 .popup h2 {
     margin-top: 0;
-    color: #333;
+    color:rgb(248, 114, 3);
     font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
@@ -381,11 +386,24 @@ Main di mobular  */
     color: #333;
 }
 .popup .close:hover {
-    color: #06D85F;
+    color: rgb(248, 114, 3);
 }
 .popup .content {
     max-height: 30%;
     overflow: auto;
+    color: white;
+}
+
+.mobularfamilybottone {
+    padding: 25px 0px;
+    font-size: 30px;
+    background-color: rgb(248, 114, 3);
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+.mobularfamilybottone:hover{
+    opacity: 0.8;
 }
   
 @media screen and (max-width: 700px){

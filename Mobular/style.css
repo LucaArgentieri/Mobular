@@ -131,17 +131,17 @@ header h1{
 }
 @keyframes gbounce { 
     0% { transform: translateY(0); }
-    30% { transform: translateY(-50px); }
+    30% { transform: translateY(-10px); }
     50% { transform: translateY(0); }
     100% { transform: translateY(0); }
 }
   
 .btn-to-main a {
-    animation: gbounce 3s;
+    animation: gbounce 1.5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
-.btn-to-main:hover {
+.btn-to-main a:hover {
     animation:step-end;
 }
 /* main zone */

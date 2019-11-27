@@ -131,12 +131,12 @@ header h1{
 }
 @keyframes gbounce { 
     0% { transform: translateY(0); }
-    30% { transform: translateY(-20px); }
+    30% { transform: translateY(-50px); }
     50% { transform: translateY(0); }
     100% { transform: translateY(0); }
 }
   
-.btn-to-main {
+.btn-to-main a {
     animation: gbounce 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
@@ -324,7 +324,7 @@ Main di mobular  */
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:rgb(248, 114, 3);
+    background-color:rgb(248, 114, 3) ;
 }
 .container:hover .overlay {
     opacity: 0.5;
@@ -362,7 +362,7 @@ Main di mobular  */
     border-radius: 5px;
     width: 30%;
     position: relative;
-    transition: all 1s linear;
+    transition: all 5s ease-in-out;
 }
   
 .popup h2 {
@@ -381,7 +381,7 @@ Main di mobular  */
     color: #333;
 }
 .popup .close:hover {
-    color: rgb(248, 114, 3);
+    color: #06D85F;
 }
 .popup .content {
     max-height: 30%;

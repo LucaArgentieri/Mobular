@@ -345,11 +345,16 @@ Main di mobular  */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 .text a {
     color:#0a1128;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .overlaypopup {
     position: fixed;

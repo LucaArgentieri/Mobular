@@ -12,7 +12,7 @@ img { /*[RESET IMPORTANTE] Le immagini si adattano al contenitore*/
 body, html{
     height: 100%;
     margin: 0;
-    background-color: blue;
+    background-color: #0a1128;
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
@@ -293,6 +293,18 @@ footer div.social {
         padding:20% 3%;
     }
 }
+@media (max-width:772px){
+
+    footer {
+        height: 30%;
+    }
+}
+@media (max-width:410px){
+
+    footer {
+        height: 30%;
+    }
+}
 
 
 /* ----------- PAGINA MOBULAR -----------
@@ -419,14 +431,13 @@ Main di mobular  */
 .mobularfamilybottone:hover{
     opacity: 0.8;
 }
-  
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
     .box{
       width: 70%;
     }
     .popup{
       width: 70%;
     }
-  }
+  } */
 /* ----------- PAGINA MOBULARFAMILY -----------
 Main di mobularfamily  */

@@ -61,7 +61,7 @@ a:hover{
     font-size: 22px;    
     text-transform: uppercase;
 }
-input[type=checkbox], ul{
+input[type=checkbox], input[type=radio], ul{
     display: none;
 }
 input[type=checkbox]:checked ~ ul {
@@ -228,7 +228,7 @@ form.newsletter{
 form.newsletter input {
     padding: 15px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 3.2px solid black;
     color: black;
     font-weight: bold;
     font-size: 15px;
@@ -244,7 +244,7 @@ footer {
     background-color: #0a1128;
     color: white;
     text-align: center;
-    height: 150px;
+    padding: 30px;
 }
 footer div.social {
     width: 100%; 
@@ -254,6 +254,164 @@ footer div.social {
 .social a {
     margin: 20px 20px;
     width: 30px;
+}
+.container_container_donate {
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(248, 114, 3);
+    min-height: 200px;
+}
+.container_donate {
+    width: 80%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    color: #0a1128;
+    justify-content: center;    
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;    
+    font-weight: bold;
+    margin-top: -35px;
+}
+
+.container_donate h2{
+    width: 100%;
+}
+.container_donate p{
+    font-size: 13px;
+    margin-bottom: 1px;
+    text-align: left;
+    width: 100%;
+    margin: 0 10px;
+    margin-bottom: -20px;
+}
+.amount_container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 100px;
+    margin-top: -100px;
+}
+.amount_container p{
+    text-align: center;
+}
+    
+.amount_container label{
+    width: 70px;
+    padding: 10px 0;
+    border: 4px solid #0a1128;
+    margin: 0px 10px;
+}
+.amount_container label:hover{
+    border: 4px solid #2c334a;
+    color: #2c334a;
+}
+.select_container {
+    width: 510px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-end;    
+    height: 100px;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+.select_container p{
+    margin-bottom: 7px;
+    margin-left: 12px;
+}
+select{
+    width: 160px;
+    padding: 10px 0;
+    border: 4px solid #0a1128;
+    margin: 0px 10px;
+    background-color: transparent;
+    font-weight: bold;
+}
+.select_container button {
+    padding: 10px 10px;
+    border: 4px solid #0a1128;
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 6em;
+}
+.amount_container input[type=radio]:checked + label{
+    border: 4px solid #0a1128;
+    background-color: #0a1128;
+    color:  rgb(248, 114, 3);
+}
+
+
+
+
+
+@media (max-width: 1090px) {
+    .container_donate{
+        margin-top: auto;
+    }
+    .amount_container, .select_container{
+        height: 180px;
+    }
+    .container_donate p{
+        margin-bottom: -60px;
+    }
+    .select_container p{
+        margin-bottom: 5px;
+        margin-left: 12px;
+    }
+
+    .select_container{
+        margin-bottom: 2em;
+    }
+    .select_container button {
+        margin-left: 0.7em
+    }
+
+}
+@media (max-width: 700px) {
+     .container_donate{
+         width: 100%;
+     }
+     .bannernews {
+        width: 100%;
+    
+    }
+}
+@media (max-width: 510px) {
+    .amount_container, .select_container{
+        height: 400px;
+        margin: auto;
+        padding: auto;
+    }
+    .container_donate{
+        width: 100%;
+    }
+    .select_items {
+        width: 100%;
+        padding: auto;
+        margin: auto;
+    }
+    .amount_container{
+        margin-top: -190px;
+    }
+    .select_container{
+        margin-top: -60px;
+    }
+    .amount_container label{
+        margin: auto;
+        padding: auto;
+    }
+    .select_items p {
+        margin: auto;
+        margin-bottom: 1em;
+        padding: auto;
+        text-align: center;
+    }
 }
 /* media query */
 
@@ -292,18 +450,6 @@ footer div.social {
     header h1{
         font-size: 2em;
         padding:20% 3%;
-    }
-}
-@media (max-width:772px){
-
-    footer {
-        height: 30%;
-    }
-}
-@media (max-width:410px){
-
-    footer {
-        height: 30%;
     }
 }
 

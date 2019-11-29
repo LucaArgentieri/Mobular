@@ -363,7 +363,7 @@ footer a{
 }
 .footer_top {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 30px;
     flex-wrap: wrap;

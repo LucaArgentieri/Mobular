@@ -77,7 +77,7 @@ input[type=checkbox], input[type=radio], ul {
     height: 100vh;
     margin:0;
     padding: 0;
-    left: 100vw;
+    left: 200vw;
     top: 0vh;
     display: flex;
     align-items: center;
@@ -91,11 +91,11 @@ input[type=checkbox], input[type=radio], ul {
 .dropdown ul label{
     position: absolute;
     top: 25px;
-    right:60px;
+    right:3em;
 }
 input[type=checkbox]:checked ~ ul {
     left:0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .dropdown {
     display:none;

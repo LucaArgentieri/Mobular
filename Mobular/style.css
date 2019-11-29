@@ -752,7 +752,7 @@ Main di mobular  */
     opacity: 1;
 }
 .popup {
-    margin: 200px auto;
+    margin: 100px auto;
     padding: 20px;
     background:#0a1128;
     border-radius: 5px;
@@ -760,7 +760,6 @@ Main di mobular  */
     position: relative;
     transition: all 1s linear;
 }
-  
 .popup h2 {
     margin-top: 0;
     color:rgb(248, 114, 3);
@@ -784,13 +783,34 @@ Main di mobular  */
     overflow: auto;
     color: white;
 }
+.imgpopup1 {
+    height: 20%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.video {
+    margin-top: 30px;
+    width:560px;
+    height: 315px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:1080px){ /*test*/
+    .video {
+        width: 100%;
+        height: 100%;
+    }
+}
 .mobularfamilybottone {
     padding: 25px 0px;
     font-size: 30px;
     background-color: rgb(248, 114, 3);
     border-radius: 5px;
-    margin-top: 20px;
-    
+    margin-top: 50px;
+    font-family:  'Heebo', sans-serif;
 }
 .mobularfamilybottone:hover{
     opacity: 0.8;

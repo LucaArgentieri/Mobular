@@ -340,10 +340,13 @@ footer {
     padding: 30px;
 }
 footer div.social {
-    width: 50%; 
+    width: 30%; 
     display: flex;
     justify-content: center;
     padding-right: 30px;
+}
+.footer_bottom p {
+    width: 70%;
 }
 
 footer a{
@@ -360,10 +363,11 @@ footer a{
     padding-bottom: 10px;
     text-align: justify;
     font-size: 17.5px;
+    flex-wrap: wrap;
 }
 .footer_top {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px;
     flex-wrap: wrap;
@@ -375,15 +379,18 @@ footer a{
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: 10px solid rgb(248, 114, 3);;
+    border: 10px solid rgb(248, 114, 3);
+    transition: all 0.4s ease;
 }
 .footer_top iframe:hover{
     border-radius: 0;
-    border: 5px solid rgb(248, 114, 3);
+    border: none;
+    width: 350px;
+    height: 350px;
     transition: all 0.4s ease;
 }
 .footer_top_box_2{
-    position: relative;
+    position: relative;;
 }
 .footer_top_box_1{
     width: 30%;
@@ -396,6 +403,13 @@ footer a{
     padding: 15px 5px;
     border-radius: 5px;
     left: -100px;
+    transition: all 0.4s ease;
+}
+.footer_top_box_2 a:hover{
+    opacity:1;
+    font-size: 1.1em;
+    width: 160px;
+    transition: all 0.4s ease;
 
 }
 .powered{
@@ -525,7 +539,41 @@ select{
     .select_container button {
         margin-left: 0.7em
     }
+    .footer_top {
+        justify-content: space-between;
+    }
+    .footer_bottom .social {
+        width: 100%;
+    }
+    .footer_bottom p {
+        width: 100%;
+    }
 
+}
+@media (max-width: 900px) {
+    .footer_top_box_1, .footer_top_box_2{
+        width: 100%;
+    }
+    .footer_top_box_1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .footer_top_box_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer_top_box_2 a{
+        position: static;
+        margin: 2rem;
+        padding: auto;
+    }
 }
 @media (max-width: 700px) {
      .container_donate{
@@ -576,6 +624,10 @@ select{
         margin-bottom: 1em;
         padding: auto;
         text-align: center;
+    }
+    .footer_top_box_2 iframe:hover{
+        width: 300px;
+        height: 300px;
     }
 }
 /* media query */

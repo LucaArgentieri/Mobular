@@ -327,6 +327,7 @@ form.newsletter input {
 }
 form.newsletter .campomail {
     margin-right: 30px;
+    margin-left:15px;
     width: 50%;
 }
 ::placeholder {

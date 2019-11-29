@@ -568,6 +568,7 @@ select{
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
     }
     .footer_top_box_2 a{
         position: static;
@@ -593,6 +594,15 @@ select{
         width: 25%;
         margin-bottom: 30px;
         margin-top: 30px;
+    }
+    .footer_top_box_2 iframe{
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+    }
+    .footer_top_box_2 iframe:hover{
+        width: 250px;
+        height: 250px;
     }
 }
 @media (max-width: 510px) {
@@ -624,10 +634,6 @@ select{
         margin-bottom: 1em;
         padding: auto;
         text-align: center;
-    }
-    .footer_top_box_2 iframe:hover{
-        width: 300px;
-        height: 300px;
     }
 }
 /* media query */

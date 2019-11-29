@@ -22,6 +22,14 @@ a {
 h1,h2,h3,h4,h5,h6{
     font-family: 'Heebo', sans-serif;
 }
+p {
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
 /* header zone */
 header{
     display: flex;
@@ -591,7 +599,7 @@ select{
         text-align: center;
     }
     form.newsletter input[type=submit]{
-        width: 25%;
+        width: 50%;
         margin-bottom: 30px;
         margin-top: 30px;
     }

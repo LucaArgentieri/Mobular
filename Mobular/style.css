@@ -68,27 +68,40 @@ a:hover{
     font-size: 22px;    
     text-transform: uppercase;
 }
-input[type=checkbox], input[type=radio], ul{
+input[type=checkbox], input[type=radio], ul {
     display: none;
-}
-input[type=checkbox]:checked ~ ul {
-    display: block
-}
-.dropdown {
-    display:none;
-    margin-right: 20px; 
 }
 .dropdown ul{
     list-style-type: none;
-    width: 100%;
-    right: 0;
-    top: 40px;
-    margin-top: 30px;
-    padding: 20px 0;
-    position: absolute;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    left: 100vw;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
     background-color: #0a1128;
+    z-index: 99999;    
+    transition: all 0.5s ease;
 }
+.dropdown ul label{
+    position: absolute;
+    top: 25px;
+    right:60px;
+}
+input[type=checkbox]:checked ~ ul {
+    left:0;
+    transition: all 0.5s ease;
+}
+.dropdown {
+    display:none;
+    margin-right: 20px;
+}
+
 .dropdown ul li{
     padding: 30px;
 }

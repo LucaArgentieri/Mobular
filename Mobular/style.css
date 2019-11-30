@@ -300,7 +300,7 @@ main .colonna p{
     background-attachment: fixed;
 }
 .bannernews {
-    min-height: 200px;
+    min-height: 300px;
     background-color:rgb(248, 114, 3);  
     background-image: url(img/newsletter.jpg);
     background-size: cover;
@@ -325,7 +325,7 @@ main .colonna p{
 }
 aside h2 {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 85px;
     padding-bottom: 20px;
     color: black;
     position: relative;
@@ -416,6 +416,15 @@ footer a{
 .footer_top_box_1{
     width: 30%;
 }
+.footer_top_box_1 img{
+    width: 30px;
+    margin-right: 2rem;
+    transition: all 0.1s ease;
+}
+.footer_top_box_1 p:hover img{
+    width: 40px;
+    transition: all 0.1s ease;
+}
 .footer_top_box_2 a{
     position: absolute;
     top:43%;
@@ -448,7 +457,7 @@ footer a{
     display: flex;
     justify-content: center;
     background-color:  rgb(248, 114, 3);
-    min-height: 200px;
+    min-height: 300px;
 }
 .container_donate {
     width: 80%;
@@ -461,11 +470,12 @@ footer a{
     flex-wrap: wrap;
     align-items: center;    
     font-weight: bold;
-    margin-top: -35px;
+    margin-top: -100px;
 }
 
 .container_donate h2{
     width: 100%;
+    margin-bottom: -100px;
 }
 .container_donate p{
     font-size: 13px;
@@ -542,6 +552,10 @@ select{
 @media (max-width: 1090px) {
     .container_donate{
         margin-top: auto;
+    }
+    .container_donate h2{
+        margin-bottom: 0px;
+        margin-top: -40px;
     }
     .amount_container, .select_container{
         height: 180px;

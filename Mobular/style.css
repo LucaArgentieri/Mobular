@@ -45,6 +45,7 @@ header{
     padding: 20px 0;
     align-items: center;
     font-family: 'Heebo', sans-serif;
+    position: relative;
 }
 a:hover{
     opacity: 0.8;

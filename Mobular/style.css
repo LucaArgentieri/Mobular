@@ -713,6 +713,9 @@ select{
 }
 
 /* [MOBULAR] by Luca */
+.some-page-wrapper {
+    margin: 1px red;
+  }
 /* Contenitore delle 3 colonne */
 .row-mobular {
     display: flex;

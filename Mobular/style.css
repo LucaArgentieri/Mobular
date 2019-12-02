@@ -186,7 +186,7 @@ main {
     line-height: 2;
     width: 90%;
     margin: 10px auto;
-    padding: 10px 0;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     min-height: 600px;
     height: auto;
@@ -196,6 +196,12 @@ main {
 @media (max-width:1400px) {
     main {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_home {
+        height: 95vh;
     }
 }
 
@@ -486,8 +492,11 @@ select{
     .footer_top {
         justify-content: space-between;
     }
-    .footer_bottom .social {
+    .footer_bottom .social{
         width: 100%;
+        margin: auto;
+        padding: 0;
+        justify-content: center;
     }
     .footer_bottom p {
         width: 100%;
@@ -542,7 +551,7 @@ select{
     .footer_top_box_2 iframe{
         width: 250px;
         height: 250px;
-        border-radius: 5px;
+        border-radius: 0;
     }
     .footer_top_box_2 iframe:hover{
         width: 250px;
@@ -646,7 +655,7 @@ select{
 }
 .mobular_main_article p, .mobular_main_article h2{
     padding: 1rem 3rem;
-    line-height: 2;
+    line-height: 2.5;
     text-align: justify;
 }
 .card_container{
@@ -703,12 +712,13 @@ select{
 }
 @media (max-width:750px){
    .card_container{
-       overflow-x: scroll;
+       overflow-x: visible;
        width: 100%;
        margin: 0;
+       margin-left: -6rem;
    }
    .card{
-       width: 60%;
+       width: 80%;
    }
 }
 

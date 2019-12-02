@@ -5,10 +5,12 @@
     border: 0;
     box-sizing: border-box;
 }
+
 img { /*[RESET IMPORTANTE] Le immagini si adattano al contenitore*/
     max-width: 100%; /*Si tiene dentro al contorno del contenitore*/
     height: auto; /*Mantiene l'aspect ratio*/
 }
+
 body, html{
     height: 100%;
     margin: 0;
@@ -17,21 +19,24 @@ body, html{
     font-size: 18px;
     overflow-x: hidden;
 }
+
 a {
     text-decoration:none;
 }
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Heebo', sans-serif;
 }
+
 p {
     word-wrap: break-word;
-  overflow-wrap: break-word;
-
+    overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
 }
-/* header zone */
+/* [HOMEPAGE] by tutti (soprattutto Giorgio)  */
+/* [HEADER] */
 header{
     display: flex;
     justify-content: space-around;
@@ -707,8 +712,8 @@ select{
    }
 }
 
-/* ----------- PAGINA MOBULAR -----------
-Main di mobular  */
+/* [MOBULAR] by Luca */
+/* Contenitore delle 3 colonne */
 .row-mobular {
     display: flex;
     flex-direction: row;
@@ -853,6 +858,7 @@ Main di mobular  */
     padding: 25px 0px;
     font-size: 30px;
     background-color: rgb(248, 114, 3); 
+    border-radius: 5px;
     margin-top: 50px;
     overflow: hidden;
     font-family:  'Heebo', sans-serif;
@@ -869,117 +875,64 @@ Main di mobular  */
     }
 }
 
-
-
-
-
-
-
-/* Omar */
-
+/* [MOBULAR FAMILY] by Omar */
 .containterfamily1{
     display: flex;
     width: 100vw;
     flex-direction: row;
-
 }
 
 h5{
-
     font-size: 40px ;
     font-family: Work Sans;
     text-align: center;
     margin-top: 50px;
-
-
-
-
-
-
-
 }
-img {
 
+img {
     height: auto;
     max-width: 100%;
 }
 
 .family{
-
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-
 .colonnafamily{
-
-
-
     flex-wrap: wrap;
-
     max-width: 25%;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
 .box1{
     border-radius: 10px;
-
     height: 300px;
     width: 300px;
     position: relative;
     overflow: hidden;
-
 }
 
 .box1 img{
-
     background-position: no-repeat cover;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
-
-
-
-
-
 }
 
 .box1 img:hover{
-
     transform: scale(1.1);
     transition: all 0.22s ease-in;
-
-
-
 }
 
-
-
-
 .containertesti{
-
     position: absolute;
     height: 60px;
-
     background-color: rgba(0,0,0,0.5);
     color: gray;
     width: 100%;
@@ -988,9 +941,9 @@ img {
     left: 0px;
     z-index: 2;
 }
+
 .containertesti:hover{
     color: white;
     bottom: 0px;
     transition: all 0.2s ease-in;
-
 }

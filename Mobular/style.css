@@ -793,14 +793,13 @@ Main di mobular  */
 }
 .containerfoto { 
     /*da sistemare*/
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .imgpopup1 { /*da sistemare*/
-    height: 20%;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width:100%;
+    height: auto;
 }
 
 .video {

@@ -717,7 +717,7 @@ Main di mobular  */
     background-color:rgb(248, 114, 3);
 }
 .container:hover .overlay {
-    opacity: 0.5;
+    opacity: 0.8;
 }
   
 .text {
@@ -737,6 +737,8 @@ Main di mobular  */
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
 }
 .overlaypopup {
     position: fixed;
@@ -789,13 +791,18 @@ Main di mobular  */
     overflow: auto;
     color: white;
 }
-.imgpopup1 {
+.containerfoto { 
+    /*da sistemare*/
+}
+
+.imgpopup1 { /*da sistemare*/
     height: 20%;
     width: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .video {
     margin-top: 30px;
     width:560px;
@@ -804,12 +811,14 @@ Main di mobular  */
     left: 50%;
     transform: translateX(-50%);
 }
+
 @media (max-width:1080px){ /*test*/
     .video {
         width: 100%;
         height: 100%;
     }
 }
+
 .mobularfamilybottone {
     padding: 25px 0px;
     font-size: 30px;
@@ -818,9 +827,11 @@ Main di mobular  */
     margin-top: 50px;
     font-family:  'Heebo', sans-serif;
 }
+
 .mobularfamilybottone:hover{
     opacity: 0.8;
 }
+
 @media (max-width:631px){
     .mobularfamilybottone {
         padding: 40px 5px;

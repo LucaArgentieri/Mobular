@@ -563,6 +563,10 @@ select{
     }
     .mobular_main_article h2, .mobular_main_article p {
         text-align: left !important;
+        padding: 40px !important;
+    }
+    .card h3, .card p {
+        padding: 1rem 0.2rem !important;
     }
     footer p {
         text-align: left;

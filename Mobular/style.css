@@ -743,10 +743,6 @@ select{
 }
 
 /* [MOBULAR] by Luca */
-.some-page-wrapper {
-    margin: 1px red;
-
-  }
 /* Contenitore delle 3 colonne */
 .row-mobular {
     display: flex;
@@ -759,18 +755,13 @@ select{
     display: -webkit-flex;
     display: flex;
 }
+/* caratteristiche delle colonne */
 .columnmobular {
     display: flex;
     width: 33.33%;
     position: relative;
 }
-.wrap    { 
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }  
-  
-
-
+/* media per mettere uno sopra l'altro i riquadri */
 @media (max-width: 600px){
     .columnmobular {
         width: 100%;
@@ -783,7 +774,7 @@ select{
     height: 100%;
     object-fit: cover;
 }
-
+/* proprietà dell'overlay di tutti i riquadri */
 .overlay {
     position: absolute;
     top: 0;
@@ -810,6 +801,7 @@ select{
     width: 100%;
     height: 100%;
 }
+/* proprietà del testo nell'overlay */
 .text a {
     color:#0a1128;
     width: 100%;
@@ -839,6 +831,7 @@ select{
     visibility: visible;
     opacity: 1;
 }
+/* proprietà del popup */
 .popup {
     margin: 100px auto;
     padding: 40px;
@@ -858,6 +851,7 @@ select{
     hyphens: auto;
     text-align: justify;
 }
+/* media query per il box del popup e per le proprietà del testo */
 @media (max-width: 900px){
     .popup {
         width: 100%;
@@ -867,6 +861,7 @@ select{
         text-align: left;
     }
 }
+/* proprietà per la x di chiusura del popup */
 .popup .close {
     position: absolute;
     top: 20px;
@@ -885,20 +880,6 @@ select{
     overflow: auto;
     color: white;
 }
-.fotopopup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.imgpopup {
-    width: 240px;
-    height: auto;
-    padding: 20px;
-}
-.imgpopup img:hover{
-    transform: scale(1.1);
-    transition: all 0.22s ease-in;
-}
    
 .video {
     margin-top: 30px;
@@ -908,12 +889,14 @@ select{
     left: 50%;
     transform: translateX(-50%);
 }
-@media (max-width:1080px){ /*test*/
+/* proprietà per il video */
+@media (max-width:1080px){
     .video {
         width: 100%;
         height: 100%;
     }
 }
+/* bottone per riportare sul mobular family */
 .mobularfamilybottone {
     padding: 25px 0px;
     font-size: 30px;
@@ -926,6 +909,7 @@ select{
 .mobularfamilybottone:hover{
     opacity: 0.8;
 }
+/* media per il bottone del popup */
 @media (max-width:631px){
     .mobularfamilybottone {
         padding: 40px 5px;

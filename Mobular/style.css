@@ -725,25 +725,36 @@ select{
 /* [MOBULAR] by Luca */
 .some-page-wrapper {
     margin: 1px red;
+
   }
 /* Contenitore delle 3 colonne */
 .row-mobular {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 100%;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 .columnmobular {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.container {
+    width: 33.33%;
     position: relative;
+}
+.wrap    { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }  
+  
+
+
+@media (max-width: 600px){
+    .columnmobular {
+        width: 100%;
+    }
 }
 
 .image {
@@ -823,6 +834,19 @@ select{
     font-family: Tahoma, Arial, sans-serif;
     font-size: 20px;
 }
+.popup p {
+    hyphens: auto;
+    text-align: justify;
+}
+@media (max-width: 900px){
+    .popup {
+        width: 100%;
+    }
+    .popup p {
+        hyphens: auto;
+        text-align: left;
+    }
+}
 .popup .close {
     position: absolute;
     top: 20px;
@@ -831,11 +855,10 @@ select{
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: white;
 }
 .popup .close:hover {
     color: rgb(248, 114, 3);
-    padding: 5px;
 }
 .popup .content {
     max-height: 30%;
@@ -849,8 +872,12 @@ select{
 }
 .imgpopup {
     width: 240px;
-    height: 350px;
+    height: auto;
     padding: 20px;
+}
+.imgpopup img:hover{
+    transform: scale(1.1);
+    transition: all 0.22s ease-in;
 }
    
 .video {

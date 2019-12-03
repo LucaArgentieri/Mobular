@@ -289,6 +289,7 @@ footer a{
     font-size: 17.5px;
     flex-wrap: wrap;
 }
+
 .footer_top {
     display: flex;
     justify-content: space-evenly;
@@ -608,6 +609,7 @@ select{
     font-family: Tahoma, Arial, sans-serif;
     font-size: 20px;
 }
+
 .popup p {
     hyphens: auto;
     text-align: justify;
@@ -651,10 +653,16 @@ select{
     margin-top: 50px;
     overflow: hidden;
     font-family:  'Heebo', sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 .mobularfamilybottone:hover{
     opacity: 0.8;
 }
+
+
 
 /* [MOBULAR FAMILY] by Omar */
 .containterfamily1{

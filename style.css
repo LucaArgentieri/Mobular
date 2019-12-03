@@ -193,18 +193,6 @@ main {
     overflow: auto;
 }
 
-@media (max-width:1400px) {
-    main {
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .header_home {
-        height: 95vh;
-    }
-}
-
 /*aside zone*/
 .bannermain {
     min-height: 200px;
@@ -462,9 +450,294 @@ select{
     color:  rgb(248, 114, 3);
 }
 
+.mobular_main_article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+.mobular_main_article p, .mobular_main_article h2{
+    padding: 1rem 3rem;
+    line-height: 2.5;
+    text-align: justify;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 4rem;
+    margin-left: -9rem;
+}
+.card {
+    width: 28%;
+    background-color: #0a1128;
+    color: white;
+    margin: 2rem;
+    margin-right: -10rem;
+    font-size: 0.9rem;
+    padding: 3rem;
+    border-radius: 10px;
+    -webkit-box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
+    box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
+    transition: all 0.5s ease;
+}
+.card:hover{
+    margin-right: -3rem;
+    transition: all 0.5s ease;
+}
+.no_shadow{
+    box-shadow: none;
+}
+.card p {
+    margin-top: 2rem;
+    text-align: left;
+    padding: 0;
+}
+.card .p_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+.card img{
+    width: 40%;
+}
 
 
+/* [MOBULAR] by Luca */
+/* Contenitore delle 3 colonne */
+.row-mobular {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+/* caratteristiche delle colonne */
+.columnmobular {
+    display: flex;
+    width: 33.33%;
+    position: relative;
+}
 
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* proprietà dell'overlay di tutti i riquadri */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(248, 114, 3);
+}
+.container:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/* proprietà del testo nell'overlay */
+.text a {
+    color:#0a1128;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+}
+.overlaypopup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.overlaypopup:target {
+    visibility: visible;
+    opacity: 1;
+}
+/* proprietà del popup */
+.popup {
+    margin: 100px auto;
+    padding: 40px;
+    background:#0a1128;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 1s linear;
+}
+.popup h2 {
+    margin-top: 0;
+    color:rgb(248, 114, 3);
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 20px;
+}
+.popup p {
+    hyphens: auto;
+    text-align: justify;
+}
+
+/* proprietà per la x di chiusura del popup */
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.popup .close:hover {
+    color: rgb(248, 114, 3);
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    color: white;
+}
+   
+.video {
+    margin-top: 30px;
+    width:560px;
+    height: 315px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* bottone per riportare sul mobular family */
+.mobularfamilybottone {
+    padding: 25px 0px;
+    font-size: 30px;
+    background-color: rgb(248, 114, 3); 
+    border-radius: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+    font-family:  'Heebo', sans-serif;
+}
+.mobularfamilybottone:hover{
+    opacity: 0.8;
+}
+
+/* [MOBULAR FAMILY] by Omar */
+.containterfamily1{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+}
+
+h5{
+    font-size: 40px ;
+    font-family: Work Sans;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.family{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.75rem;
+    justify-content: center;
+}
+
+
+.box1{
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box1 img{
+    background-position: no-repeat cover;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box1 img:hover{
+    transform: scale(1.1);
+    transition: all 0.22s ease-in;
+}
+
+.containertesti{
+    position: absolute;
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    /* posizionamento assoluto */
+    bottom: -10px;
+    left: 0px;
+    z-index: 2;
+}
+
+.containertesti:hover{
+    color: white;
+    bottom: 0px;
+    transition: all 0.2s ease-in;
+}
+
+/* MEDIA QUERY ZONE  */
+
+@media (max-width:1400px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_home {
+        height: 95vh;
+    }
+}
 
 @media (max-width: 1090px) {
     .container_donate{
@@ -620,7 +893,6 @@ select{
         border-radius: 0;
     }
 }
-/* media query */
 
 @media (max-width: 1000px){
 
@@ -668,64 +940,6 @@ select{
     }
 }
 
-.mobular_main_article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-    padding: 4rem 2rem;
-}
-.mobular_main_article p, .mobular_main_article h2{
-    padding: 1rem 3rem;
-    line-height: 2.5;
-    text-align: justify;
-}
-.card_container{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    margin: 4rem;
-    margin-left: -9rem;
-}
-.card {
-    width: 28%;
-    background-color: #0a1128;
-    color: white;
-    margin: 2rem;
-    margin-right: -10rem;
-    font-size: 0.9rem;
-    padding: 3rem;
-    border-radius: 10px;
-    -webkit-box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
-    -moz-box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
-    box-shadow: -61px 0px 24px -16px rgba(0,0,0,0.75);
-    transition: all 0.5s ease;
-}
-.card:hover{
-    margin-right: -3rem;
-    transition: all 0.5s ease;
-}
-.no_shadow{
-    box-shadow: none;
-}
-.card p {
-    margin-top: 2rem;
-    text-align: left;
-    padding: 0;
-}
-.card .p_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-}
-
-.card img{
-    width: 40%;
-}
-
 @media (max-width:1200px){
     .mobular_main_article{
         width: 100%;
@@ -746,25 +960,6 @@ select{
    }
 }
 
-/* [MOBULAR] by Luca */
-/* Contenitore delle 3 colonne */
-.row-mobular {
-    display: flex;
-    flex-wrap: wrap;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-}
-/* caratteristiche delle colonne */
-.columnmobular {
-    display: flex;
-    width: 33.33%;
-    position: relative;
-}
 /* media per mettere uno sopra l'altro i riquadri */
 @media (max-width: 600px){
     .columnmobular {
@@ -772,89 +967,6 @@ select{
     }
 }
 
-.image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* proprietà dell'overlay di tutti i riquadri */
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color:rgb(248, 114, 3);
-}
-.container:hover .overlay {
-    opacity: 0.7;
-}
-
-.text {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-/* proprietà del testo nell'overlay */
-.text a {
-    color:#0a1128;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Heebo', sans-serif;
-    font-size: 40px;
-}
-.overlaypopup {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-}
-.overlaypopup:target {
-    visibility: visible;
-    opacity: 1;
-}
-/* proprietà del popup */
-.popup {
-    margin: 100px auto;
-    padding: 40px;
-    background:#0a1128;
-    border-radius: 5px;
-    width: 60%;
-    position: relative;
-    transition: all 1s linear;
-}
-.popup h2 {
-    margin-top: 0;
-    color:rgb(248, 114, 3);
-    font-family: Tahoma, Arial, sans-serif;
-    font-size: 20px;
-}
-.popup p {
-    hyphens: auto;
-    text-align: justify;
-}
 /* media query per il box del popup e per le proprietà del testo */
 @media (max-width: 900px){
     .popup {
@@ -865,34 +977,7 @@ select{
         text-align: left;
     }
 }
-/* proprietà per la x di chiusura del popup */
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-.popup .close:hover {
-    color: rgb(248, 114, 3);
-}
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
-    color: white;
-}
-   
-.video {
-    margin-top: 30px;
-    width:560px;
-    height: 315px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 /* proprietà per il video */
 @media (max-width:1080px){
     .video {
@@ -900,19 +985,7 @@ select{
         height: 100%;
     }
 }
-/* bottone per riportare sul mobular family */
-.mobularfamilybottone {
-    padding: 25px 0px;
-    font-size: 30px;
-    background-color: rgb(248, 114, 3); 
-    border-radius: 5px;
-    margin-top: 50px;
-    overflow: hidden;
-    font-family:  'Heebo', sans-serif;
-}
-.mobularfamilybottone:hover{
-    opacity: 0.8;
-}
+
 /* media per il bottone del popup */
 @media (max-width:631px){
     .mobularfamilybottone {
@@ -921,73 +994,4 @@ select{
         line-height: 25px;
         
     }
-}
-
-/* [MOBULAR FAMILY] by Omar */
-.containterfamily1{
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-}
-
-h5{
-    font-size: 40px ;
-    font-family: Work Sans;
-    text-align: center;
-    margin-top: 50px;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
-.family{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1.75rem;
-    justify-content: center;
-}
-
-
-.box1{
-    border-radius: 10px;
-    height: 300px;
-    width: 300px;
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.box1 img{
-    background-position: no-repeat cover;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.box1 img:hover{
-    transform: scale(1.1);
-    transition: all 0.22s ease-in;
-}
-
-.containertesti{
-    position: absolute;
-    height: 60px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    width: 100%;
-    /* posizionamento assoluto */
-    bottom: -10px;
-    left: 0px;
-    z-index: 2;
-}
-
-.containertesti:hover{
-    color: white;
-    bottom: 0px;
-    transition: all 0.2s ease-in;
 }

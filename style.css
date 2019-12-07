@@ -523,158 +523,159 @@ select{
 
 
 /* [MOBULAR] by Luca */
-/* Contenitore delle 3 colonne */
-.row-mobular {
+.wraprobot {
+    margin: 15px;
+  }
+  
+.rowrobot {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
+    width: 100%;
 }
-/* caratteristiche delle colonne */
-.columnmobular {
+  
+.columnrobot {
     display: flex;
-    width: 33.33%;
-    position: relative;
+    flex-direction: column;
+    flex-basis: 50%;
+    text-align: justify;
+    justify-content: center;
+    width:100%;
+    height: 100%;
 }
 
-.image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.columnrobot p {
+    line-height: 2.5;
+    text-align: justify;
+    padding: 1rem 3rem;
+    font-family:'Work Sans', sans-serif;
 }
-/* proprietà dell'overlay di tutti i riquadri */
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color:rgb(248, 114, 3);
-}
-.container:hover .overlay {
-    opacity: 0.7;
-}
-
-.text {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-/* proprietà del testo nell'overlay */
-.text a {
-    color:#0a1128;
-    width: 100%;
-    height: 100%;
+.colonnafotorobot {
+    width: 60%;
+    margin-left: 100px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'Heebo', sans-serif;
-    font-size: 40px;
 }
-.overlaypopup {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: none;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
+.colonnafotorobot2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 50px;
+}
+.colonnafotorobot3 {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    height: 100%;
-    overflow: scroll;
-}
-.overlaypopup:target {
-    visibility: visible;
-    opacity: 1;
-}
-/* proprietà del popup */
-.popup {
-    margin: 100px auto;
-    padding: 40px;
-    background:#0a1128;
-    border-radius: 5px;
-    width: 60%;
-    position: relative;
-    transition: all 1s linear;
-}
-.popup h2 {
-    margin-top: 0;
-    color:rgb(248, 114, 3);
-    font-family: Tahoma, Arial, sans-serif;
-    font-size: 20px;
+    padding-top: 20px;
 }
 
-.popup p {
-    hyphens: auto;
-    text-align: justify;
+.colonnatestorobot {
+    display: flex;
+    justify-content: center;
 }
-
-/* proprietà per la x di chiusura del popup */
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+.titolorobot {
+    font-size: 27px;
+    font-family:'Heebo', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: underline rgb(248, 114, 3);
 }
-.popup .close:hover {
-    color: rgb(248, 114, 3);
-}
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
-    color: white;
-}
-   
 .video {
-    margin-top: 30px;
+    margin-top: 10px;
     width:560px;
     height: 315px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    border: 30px solid rgb(248, 114, 3);
+    border-radius: 5px;
 }
 
-/* bottone per riportare sul mobular family */
-.mobularfamilybottone {
-    padding: 25px 0px;
-    font-size: 30px;
-    background-color: rgb(248, 114, 3); 
-    border-radius: 5px;
-    margin-top: 50px;
-    overflow: hidden;
-    font-family:  'Heebo', sans-serif;
+.bannerrobot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color:rgb(248, 114, 3);
+
+    
+}
+.bannerrobot a {
     color: white;
     text-align: center;
-    width: 100%;
-    height: auto;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 50px;  
+    
 }
-.mobularfamilybottone:hover{
+/* bottone per riportare sul mobular family */
+.bottoneola {
+    font-size: 30px;
+    padding: 25px;
+    background-color: #0a1128; 
+    border-radius: 5px;
+    font-family:  'Heebo', sans-serif;
+    color: white;
+    justify-content: center;
+    display: flex;
+    width: 30%;
+    height: 100px;
+    margin-top: 40px;
+}
+.bottoneola:hover{
+    opacity: 0.8;
+}
+.bottonedonation {
+    font-size: 30px;
+    padding: 25px;
+    background-color: #0a1128; 
+    border-radius: 5px;
+    font-family:  'Heebo', sans-serif;
+    color: white;
+    justify-content: center;
+    display: flex;
+    width: 30%;
+    margin-top: 40px;
+    height: 100px;
+}
+.bottonedonation:hover{
     opacity: 0.8;
 }
 
-
+@media (max-width: 1000px){
+    .columnrobot {
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: left;
+    }
+    .bottoneola {
+        font-size: 30px;
+        padding: 25px;
+        background-color: #0a1128; 
+        border-radius: 5px;
+        font-family:  'Heebo', sans-serif;
+        color: white;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .bottonedonation {
+        font-size: 30px;
+        padding: 25px;
+        background-color: #0a1128; 
+        border-radius: 5px;
+        font-family:  'Heebo', sans-serif;
+        color: white;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        margin-top: 40px;
+        height: 100px;
+    }
+    
+}
 
 /* [MOBULAR FAMILY] by Omar */
 .containterfamily1{
@@ -1065,15 +1066,5 @@ img {
     .video {
         width: 100%;
         height: 100%;
-    }
-}
-
-/* media per il bottone del popup */
-@media (max-width:631px){
-    .mobularfamilybottone {
-        padding: 40px 5px;
-        text-align: center;
-        line-height: 25px;
-        
     }
 }

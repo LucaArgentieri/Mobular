@@ -135,6 +135,7 @@ input[type=checkbox]:checked ~ ul {
 }
 .donate:hover{
     opacity: 0.8;
+    
 }
 nav.contenuto .active, .dropdown ul li a.active {
     border-bottom: 1px solid rgb(248, 114, 3);
@@ -160,7 +161,6 @@ header h1{
     position: absolute;
     bottom: 5%;
     width: 100%;
-
 }
 @keyframes gbounce {
     0% { transform: translateY(0); }
@@ -741,9 +741,68 @@ img {
     bottom: 0px;
     transition: all 0.2s ease-in;
 }
-
+/* foto testo family*/
+.colonnefamily {
+    margin: 15px;
+    background-color: white;
+    padding: 75px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.colonnafamily {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 40px;
+}
+.colonnafamilyfoto {
+    display: flex;
+    justify-content: center;
+}
+.colonnafamily p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 2.5;
+    text-align: justify;
+    padding: 1rem 3rem;
+}
+.colonnafamilytesto {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-family: 'Heebo', sans-serif;
+    flex-wrap: wrap;
+}
+.colonnafamilytesto h2 {
+    font-size: 27px;
+}
+.familyh2 {
+    font-size: 27px;
+    text-align: center;
+    font-family:'Heebo', sans-serif;
+}
 /* MEDIA QUERY ZONE  */
-
+@media (max-width: 700px){
+    .colonnefamily {
+        padding: 0px;
+    }
+    .row {
+        padding: 0px;
+    }
+    .colonnafamily {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .colonnafamily {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
 @media (max-width:1400px) {
     main {
         width: 100%;
@@ -819,6 +878,12 @@ img {
         position: static;
         margin: 2rem;
         padding: auto;
+    }
+}
+@media (max-width: 700px){
+    .colonnafamilytesto h2, .colonnafamily p {
+        text-align: left;
+        padding: 40px !important;
     }
 }
 @media (max-width: 700px) {
@@ -978,7 +1043,7 @@ img {
 }
 
 /* media per mettere uno sopra l'altro i riquadri */
-@media (max-width: 600px){
+@media (max-width: 1000px){
     .columnmobular {
         width: 100%;
     }

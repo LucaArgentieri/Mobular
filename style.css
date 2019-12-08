@@ -129,19 +129,27 @@ input[type=checkbox]:checked ~ ul {
 .donate {
     padding: 25px 0px;
     font-size: 30px;
-    background-color: rgb(248, 114, 3);
     border-radius: 5px;
     margin-right:40px;
+    background-color: rgb(248, 114, 3);
+    
+}
+.donate a {
+    width: 100%;
+    height: 100%;
 }
 .donate:hover{
     opacity: 0.8;
-    
 }
 nav.contenuto .active, .dropdown ul li a.active {
     border-bottom: 1px solid rgb(248, 114, 3);
     padding: 3px;
     margin: 0 17px;
     color: rgb(248, 114, 3);
+}
+nav.contenuto.menu.donate:hover {
+    color: white;
+    background-color:#0a1128;
 }
 header h1{
     color: white;
@@ -217,7 +225,6 @@ main {
     background-image: url(img/newsletter.jpg);
     background-size: cover;
     background-position: top;
-
 }
 .bannerdonate {
     height: 200px;
@@ -252,7 +259,7 @@ form.newsletter input {
 }
 
 input[type=submit]:hover{
-    color: white;
+    color: black;
     background-color: rgb(248, 114, 3);
     cursor: pointer;
 }
@@ -262,9 +269,14 @@ form.newsletter .campomail {
     margin-left:15px;
     width: 50%;
 }
+form.newsletter .campomail:hover {
+    background-color: rgb(248, 114, 3);
+    cursor: text;
+}
 ::placeholder {
     color: black;
 }
+
 footer {
     background-color: #0a1128;
     color: white;
@@ -418,7 +430,10 @@ footer a{
 }
 .amount_container label:hover{
     border: 4px solid #2c334a;
-    color: #2c334a;
+    color: white;
+    background-color: #0a1128;
+    cursor: pointer;
+    
 }
 .select_container {
     width: 510px;
@@ -443,6 +458,11 @@ select{
     margin: 0px 10px;
     background-color: transparent;
     font-weight: bold;
+    cursor: pointer;
+}
+select:hover {
+    background-color:#0a1128;
+    color: white;
 }
 .select_container button {
     padding: 10px 10px;
@@ -450,6 +470,11 @@ select{
     background-color: transparent;
     font-weight: bold;
     margin-left: 6em;
+}
+.select_container button:hover {
+    background-color: #0a1128;
+    color: white;
+    cursor: pointer;
 }
 .amount_container input[type=radio]:checked + label{
     border: 4px solid #0a1128;
@@ -598,6 +623,8 @@ select{
     flex-basis: 100%;
     justify-content: space-evenly;
     background-color:rgb(248, 114, 3);
+    height: 200px;  
+    margin-bottom: 50px;
 
     
 }
@@ -605,38 +632,33 @@ select{
     color: white;
     text-align: center;
     font-family: 'Heebo', sans-serif;
-    margin-bottom: 50px;  
     
 }
-/* bottone per riportare sul mobular family */
+/* bottone per riportare sul oladelmar o donate1 */
 .bottoneola {
-    font-size: 30px;
-    padding: 25px;
-    background-color: #0a1128; 
-    border-radius: 5px;
-    font-family:  'Heebo', sans-serif;
-    color: white;
-    justify-content: center;
     display: flex;
-    width: 30%;
-    height: 100px;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1128;
+    padding:20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size:40px;
 }
 .bottoneola:hover{
     opacity: 0.8;
 }
 .bottonedonation {
-    font-size: 30px;
-    padding: 25px;
-    background-color: #0a1128; 
-    border-radius: 5px;
-    font-family:  'Heebo', sans-serif;
-    color: white;
-    justify-content: center;
     display: flex;
-    width: 30%;
-    margin-top: 40px;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1128;
+    padding:20px 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size:40px;
 }
 .bottonedonation:hover{
     opacity: 0.8;
@@ -647,34 +669,9 @@ select{
         flex-basis: 100%;
         justify-content: center;
         text-align: left;
+        height: auto;
+        width:50%   ; 
     }
-    .bottoneola {
-        font-size: 30px;
-        padding: 25px;
-        background-color: #0a1128; 
-        border-radius: 5px;
-        font-family:  'Heebo', sans-serif;
-        color: white;
-        justify-content: center;
-        display: flex;
-        width: 50%;
-        height: 100px;
-        margin-top: 40px;
-    }
-    .bottonedonation {
-        font-size: 30px;
-        padding: 25px;
-        background-color: #0a1128; 
-        border-radius: 5px;
-        font-family:  'Heebo', sans-serif;
-        color: white;
-        justify-content: center;
-        display: flex;
-        width: 50%;
-        margin-top: 40px;
-        height: 100px;
-    }
-    
 }
 
 /* [MOBULAR FAMILY] by Omar */
@@ -781,9 +778,10 @@ img {
     font-size: 27px;
 }
 .familyh2 {
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     font-family:'Heebo', sans-serif;
+    padding-bottom: 50px;
 }
 /* MEDIA QUERY ZONE  */
 @media (max-width: 700px){

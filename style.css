@@ -670,7 +670,7 @@ select:hover {
         justify-content: center;
         text-align: left;
         height: auto;
-        width:50%   ; 
+        width:50%; 
     }
 }
 
@@ -776,12 +776,53 @@ img {
 }
 .colonnafamilytesto h2 {
     font-size: 27px;
+    text-decoration: underline rgb(248, 114, 3);
+}
+.sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    align-items: baseline;
+}
+.imgsponsor2 {
+    width: 100px;
+    height: 148.5px;
+}
+.imgsponsor1 {
+    width: 390px;
+    height: 83.5px;
+}
+.imgsponsor {
+    width: 343.5px;
+    height: 86.5px;
+}
+@media (min-width:900px){
+    .sponsor {
+        width: 103%;
+    }
+}
+@media (max-width:900px){
+    .imgsponsor {
+        margin-bottom: 50px;
+    }
+    .imgsponsor2 {
+        margin-bottom: 50px;
+    }
+    .imgsponsor1 {
+        margin-bottom: 50px;
+    }
+    .sponsor {
+        justify-content: center;
+        padding:20px;
+    }
 }
 .familyh2 {
     font-size: 30px;
     text-align: center;
     font-family:'Heebo', sans-serif;
     padding-bottom: 50px;
+    text-decoration: underline rgb(248, 114, 3);
 }
 /* MEDIA QUERY ZONE  */
 @media (max-width: 700px){

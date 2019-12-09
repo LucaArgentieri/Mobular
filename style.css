@@ -624,17 +624,19 @@ select:hover {
     justify-content: space-evenly;
     background-color:rgb(248, 114, 3);
     height: 200px;  
-    margin-bottom: 50px;
-
-    
+    margin-bottom: 0px;
 }
 .bannerrobot a {
     color: white;
     text-align: center;
     font-family: 'Heebo', sans-serif;
-    
 }
-/* bottone per riportare sul oladelmar o donate1 */
+@media (max-width:900px){
+    .bannerrobot {
+        height: 400px;
+    }
+}
+/* bottone per riportare sul sponsor e donate */
 .bottoneola {
     display: flex;
     justify-content: center;
@@ -648,6 +650,11 @@ select:hover {
 }
 .bottoneola:hover{
     opacity: 0.8;
+}
+@media (max-width:900px){
+    .bottoneola {
+        font-size: 35px;
+    }
 }
 .bottonedonation {
     display: flex;
@@ -744,6 +751,7 @@ img {
     margin: 15px;
     background-color: white;
     padding: 75px;
+    padding-bottom: 40px;
 }
 .row {
     display: flex;
@@ -821,7 +829,7 @@ img {
     font-size: 30px;
     text-align: center;
     font-family:'Heebo', sans-serif;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     text-decoration: underline rgb(248, 114, 3);
 }
 /* MEDIA QUERY ZONE  */

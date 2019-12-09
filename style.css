@@ -607,6 +607,11 @@ select:hover {
     padding-top: 20px;
     text-decoration: underline rgb(248, 114, 3);
 }
+@media (max-width:900px){
+    .columnrobot p{
+        text-align: left;
+    }
+}
 .video {
     margin-top: 10px;
     width:560px;
@@ -964,9 +969,13 @@ img {
         width: 250px;
         height: 250px;
     }
-    .mobular_main_article h2, .mobular_main_article p {
-        text-align: left !important;
+    .mobular_main_article h2 {
+        text-align: center !important;
         padding: 40px !important;
+    }
+    .mobular_main_article p {
+        text-align: left !important;
+        padding: 40px !important; 
     }
     .card h3, .card p {
         padding: 1rem 0.2rem !important;

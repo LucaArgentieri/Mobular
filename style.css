@@ -610,6 +610,8 @@ select:hover {
 @media (max-width:900px){
     .columnrobot p{
         text-align: left;
+        padding: 1rem 1.5rem;
+        line-height: 2;
     }
 }
 .video {
@@ -936,7 +938,9 @@ img {
 @media (max-width: 700px){
     .colonnafamilytesto h2, .colonnafamily p {
         text-align: left;
-        padding: 40px !important;
+        line-height: 2;
+        padding: 1rem 1.5rem;
+
     }
 }
 @media (max-width: 700px) {

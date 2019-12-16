@@ -132,7 +132,6 @@ input[type=checkbox]:checked ~ ul {
     border-radius: 5px;
     margin-right:40px;
     background-color: rgb(248, 114, 3);
-    
 }
 .donate a {
     width: 100%;
@@ -147,9 +146,9 @@ nav.contenuto .active, .dropdown ul li a.active {
     margin: 0 17px;
     color: rgb(248, 114, 3);
 }
-nav.contenuto.menu.donate:hover {
-    color: white;
-    background-color:#0a1128;
+nav.contenuto.menu.donate a:hover {
+    color: #0a1128;
+    border-bottom: 1px solid rgb(248, 114, 3);
 }
 header h1{
     color: white;
@@ -496,6 +495,9 @@ select:hover {
     line-height: 2.5;
     text-align: justify;
 }
+.mobular_main_article h2 {
+    text-decoration: underline rgb(248, 114, 3);
+}
 .card_container{
     display: flex;
     justify-content: center;
@@ -614,13 +616,26 @@ select:hover {
         line-height: 2;
     }
 }
+.colonnafotorobot2 h3 {
+    text-decoration: underline rgb(248, 114, 3);
+    text-align: center;
+}
 .video {
     margin-top: 10px;
     width:560px;
     height: 315px;
     display: flex;
-    border: 30px solid rgb(248, 114, 3);
+    border: 10px solid rgb(248, 114, 3);
     border-radius: 5px;
+}
+/* proprietà per il video */
+@media (max-width:1080px){
+    .video {
+        width: 100%;
+        height: 300px;
+        border: 5px solid rgb(248, 114, 3);
+        
+    }
 }
 
 .bannerrobot {
@@ -649,11 +664,11 @@ select:hover {
     justify-content: center;
     align-items: center;
     background-color: #0a1128;
-    padding:20px;
+    padding:10px 50px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 5px;
-    font-size:40px;
+    font-size:30px;
 }
 .bottoneola:hover{
     opacity: 0.8;
@@ -668,11 +683,17 @@ select:hover {
     justify-content: center;
     align-items: center;
     background-color: #0a1128;
-    padding:20px 100px;
+    padding:10px 125px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 5px;
-    font-size:40px;
+    font-size:30px;
+}
+@media (max-width:900px){
+    .bottonedonation {
+        font-size: 35px;
+        padding: 20px 140px;
+    }
 }
 .bottonedonation:hover{
     opacity: 0.8;
@@ -1118,13 +1139,5 @@ img {
     .popup p {
         hyphens: auto;
         text-align: left;
-    }
-}
-
-/* proprietà per il video */
-@media (max-width:1080px){
-    .video {
-        width: 100%;
-        height: 100%;
     }
 }

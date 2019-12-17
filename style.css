@@ -43,7 +43,7 @@ header{
     flex-wrap: wrap;
     background-color: #0a1128;
     min-height: 35px;
-    height: auto;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -126,9 +126,12 @@ input[type=checkbox]:checked ~ ul {
     width: 30px;
     margin-right: 10px;
 }
+.donate {
+    display: flex;
+    align-items: center;
+}
 .donate a {     
-    display: inline-block;     
-    position: relative;    
+    display: flex; 
     z-index: 1;     
     padding: 10px 10px 10px 10px;  
     background-color: rgb(248, 114, 3);   
@@ -139,6 +142,7 @@ input[type=checkbox]:checked ~ ul {
     margin-right:40px;
     cursor: pointer;
 }
+
 .donate:hover{
     opacity: 0.8;
 }
